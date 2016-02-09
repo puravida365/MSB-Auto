@@ -13,9 +13,19 @@
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
 </head>
 <body>
-    <header>
-        <nav class="container navbar-default">
-            <ul class="nav navbar-nav">
+    <header class="col-md-12">
+
+        <nav class="navbar navbar-default col-md-10 col-md-offset-1" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>    
+          </div>
+          <a class="navbar-brand" href="#"><img src="assets/img/MSB_logo.png" width="100" height="100" alt=""></a>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
                 <li ui-sref-active="active">
                     <a ui-sref="about">About</a>
                 </li>
@@ -26,7 +36,20 @@
                     <a ui-sref="contact">Contact</a>
                 </li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="social">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-yelp"></i></a>
+                <a href="#"><i class="fa fa-foursquare"></i></a>
+              </li>
+              <li><a href="#contact">(562) 455-8566</a></li>
+            </ul>
+          </div>
         </nav>
+
+
     </header>
 
     <div class="container" ui-view="main"></div>

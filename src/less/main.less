@@ -39,5 +39,44 @@
  * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
+
+.navbar-default {
+    background-color: @white;
+    border: none;
+    height: 130px;
+
+    .navbar-collapse {
+        padding: 40px 0 0 0;
+    }
+
+    li {
+        font-size: 1.3em;
+        font-weight: bold;
+        text-transform: uppercase;
+        // padding: 0 10px;
+
+        &.social {
+            padding-top: 10px;
+            a {
+                display: inline;
+                padding: 20px 3px;
+                i {
+                    font-size: 1.6em;
+
+                    &:hover {
+                        color: @red;
+                    }
+                }
+            } 
+        }
+    }
+
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: @red;
+    background: none;
+}
+
 @import '../app/home/home.less';
 

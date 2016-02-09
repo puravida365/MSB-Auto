@@ -13,3 +13,12 @@
 @white: #fff;
 @black: #000;
 @red: #990000;
+
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+    background-color: @startColor;
+    background-image: -webkit-gradient(linear, top, bottom, from(@startColor), to(@endColor));
+    background-image: -webkit-linear-gradient(top, @startColor, @endColor);
+    background-image: -moz-linear-gradient(top, @startColor, @endColor);
+    background-image: -ms-linear-gradient(top, @startColor, @endColor);
+    background-image: -o-linear-gradient(top, @startColor, @endColor);
+}

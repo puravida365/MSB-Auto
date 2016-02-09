@@ -44,6 +44,19 @@
     background-color: @white;
     border: none;
     height: 130px;
+    @media screen and (max-width: @screen-md-max) {
+        height: 70px;
+    }
+
+    .navbar-brand {
+        @media screen and (max-width: @screen-md-max) {
+            margin-top: -55px;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }       
+    }
 
     .navbar-collapse {
         padding: 40px 0 0 0;
@@ -78,5 +91,12 @@
     background: none;
 }
 
-@import '../app/home/home.less';
+footer {
+    background-color: @black;
+    padding: 20px;
+    color: @white;
+    line-height: 32px;
+}
+
+@import '../app/about/about.less';
 

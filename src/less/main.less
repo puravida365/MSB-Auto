@@ -51,12 +51,12 @@
     background-color: transparent;
     border: none;
     height: 130px;
-    @media screen and (max-width: @screen-md-max) {
+    @media screen and (max-width: @screen-md) {
         height: 70px;
     }
 
     .navbar-brand {
-        @media screen and (max-width: @screen-md-max) {
+        @media screen and (max-width: @screen-sm) {
             margin-top: -55px;
             img {
                 width: 70px;
@@ -103,6 +103,12 @@ footer {
     padding: 20px;
     color: @white;
     line-height: 32px;
+    @media screen and (max-width: @screen-md) {
+        text-align: center;
+        img {
+            padding: 20px 0 0 0;
+        }
+    }
 }
 
 @import '../app/about/about.less';

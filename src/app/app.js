@@ -1,7 +1,11 @@
 (function(app) {
 
-    app.config(function ($stateProvider, $urlRouterProvider) {
+    app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/about');
+
+        $locationProvider.html5Mode({
+            enabled:true
+        });
     });
 
     app.run(function () {});
